@@ -1,3 +1,9 @@
+@import url('https://fonts.googleapis.com/css2?family=Nanum+Gothic:wght@400;700;800&display=swap');
+
+* {
+  font-size: 20px;
+  font-family: 'Nanum Gothic', sans-serif;
+}
 .App {
   text-align: center;
 }
@@ -35,4 +41,21 @@
   to {
     transform: rotate(360deg);
   }
+}
+
+.black-nav {
+  display: flex;
+  background: black;
+  width: 100%;
+  color: white;
+  padding-left: 20px;
+}
+
+.post {
+  /* display: flex; */
+  /* align-items: center; */
+  text-align: center;
+  /* justify-content: center; */
+  width: 50%;
+  margin: 0 auto;
 }
