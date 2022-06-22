@@ -13,6 +13,8 @@ function App() {
   ]);
   let [postTime, setpostTime] = useState(['6월 21일 발행', '6월 22일 발행', '6월 23일 발행']);
   let [좋아요, set좋아요] = useState(0);
+  let [modal, setModal] = useState(false);
+
   return (
     <div className="App">
       <div className="black-nav">
@@ -47,11 +49,10 @@ function App() {
         <p>{postTime[1]}</p>
       </div>
       <div className="list">
-        <h4>{postTitle[2]}</h4>
+        <h4 onClick={() => setModal(!modal)}>{postTitle[2]}</h4>
         <p>{postTime[2]}</p>
       </div>
-
-      <Modal></Modal>
+      {modal ? <Modal></Modal> : null}
     </div>
   );
 }
