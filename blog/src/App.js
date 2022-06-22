@@ -50,12 +50,19 @@ function App() {
         <h4>{postTitle[2]}</h4>
         <p>{postTime[2]}</p>
       </div>
-      {/* <div className="post">
-        <h4>{postTitle}</h4>
-        <p>{postContents}</p>
-      </div> */}
+
+      <Modal></Modal>
     </div>
   );
 }
 
+function Modal() {
+  return (
+    <div className="modal">
+      <h4>제목</h4>
+      <p>날짜</p>
+      <p>상세내용</p>
+    </div>
+  );
+}
 export default App;
